@@ -1,0 +1,19 @@
+using System;
+using System.Globalization;
+
+class Program {
+    static void Main(string[] args) {
+		double numFuncionario, hrTrabalhada, ValorPhora, salario;
+
+		numFuncionario = double.Parse(Console.ReadLine());
+		hrTrabalhada = double.Parse(Console.ReadLine());
+		ValorPhora = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+		salario = hrTrabalhada * ValorPhora;
+
+		Console.WriteLine("NÚMERO = " + numFuncionario);
+		Console.WriteLine("SALÁRIO = R$ " + salario.ToString("F2", CultureInfo.InvariantCulture));
+
+		Console.ReadLine();
+    }
+}
