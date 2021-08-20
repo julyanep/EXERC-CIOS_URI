@@ -1,0 +1,17 @@
+using System;
+using System.Globalization;
+class Program {
+    static void Main(string[] args) {
+        double n, r, area;
+        
+        r = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+        n = 3.14159;
+
+        area = n * Math.Pow(r, 2.0);
+
+        Console.WriteLine("A = " + area.ToString("F4", CultureInfo.InvariantCulture));
+
+        Console.ReadLine();
+        
+    }
+}
