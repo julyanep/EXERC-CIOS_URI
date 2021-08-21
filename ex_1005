@@ -1,0 +1,20 @@
+using System;
+using System.Globalization;
+
+class Program {
+    static void Main(string[] args) {
+        double a, b, media, mediap;
+
+		a = double.Parse(Console.ReadLine());
+		b = double.Parse(Console.ReadLine());
+
+		media = (a * 3.5) + (b * 7.5);
+		mediap = media / (3.5 + 7.5);
+
+		Console.WriteLine("MEDIA = " + mediap.ToString("F5", CultureInfo.InvariantCulture));
+
+		Console.ReadLine();
+
+		
+    }
+}
