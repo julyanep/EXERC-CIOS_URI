@@ -1,0 +1,16 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+		int km, min, distancia;
+
+		km = int.Parse(Console.ReadLine());
+		min = 2;
+
+		distancia = km * min;
+
+		Console.WriteLine(distancia + " minutos");
+
+		Console.ReadLine();	
+    }
+}
